@@ -4,7 +4,7 @@ import TaskApp from "./TaskApp";
 import RealmApolloProvider from "./graphql/RealmApolloProvider";
 import { useRealmApp, RealmAppProvider } from "./RealmApp";
 
-export const APP_ID = "tasktracker-qadfx";
+export const APP_ID = process.env.REACT_APP_REALM_APP_ID;
 
 const RequireLoggedInUser = ({ children }) => {
   // Only render children if there is a logged in user.

@@ -90,7 +90,7 @@ export default function LoginScreen() {
             <TextInput
               type="password"
               label="Password"
-              placeholder="pa55w0rd"
+              placeholder="password"
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
@@ -128,6 +128,16 @@ export default function LoginScreen() {
               {mode === "login" ? "Register one now." : "Log in instead."}
             </ToggleLink>
           </ToggleContainer>
+          <LoginFormRow>
+            <div>
+              <h5>
+                {" "}
+                Demo account: <br />
+              </h5>
+              <p>Email: sampleemail@example.com </p>
+              <p>Password: password</p>
+            </div>
+          </LoginFormRow>
         </Card>
       )}
     </Container>
